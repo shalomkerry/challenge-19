@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./images/logo.svg" alt="Ping Logo" />
+        <h1 class="primary-header">
+          We are launching
+          <span class="bold" style="color: black; font-weight: 700">soon!</span>
+        </h1>
+        <h4 class="secondary-header">Subscribe and get notified</h4>
+      </header>
+      <section class="main">
+        <form action="#" id="form">
+          <label for="email"></label>
+          <input
+            type="text"
+            placeholder="Your email address..."
+            id="input_email"
+          />
+
+          <button class="btn">Notify Me</button>
+        </form>
+        <p class="error-message"></p>
+      </section>
+      <article>
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="illustration-dashboard"
+          class="mainImg"
+        />
+      </article>
+      <footer>
+        <section class="social">
+          <div class="socialbg"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="socialbg"><i class="fa-brands fa-twitter"></i></div>
+          <div class="socialbg"><i class="fa-brands fa-instagram"></i></div>
+        </section>
+        <p>&copy;Copyright Ping. All rights reserved.</p>
+      </footer>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

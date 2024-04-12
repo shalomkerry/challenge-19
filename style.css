@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+
+
+===========================
+RESET
+===========================
+*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+===========================
+BACKGROUNDS and COMMONS
+===========================
+*/
+body,
+header,
+.main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Libre Franklin", sans-serif;
+  color: hsl(0, 0%, 59%);
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+/*
+===========================
+LAYOUT
+===========================
+*/
+main {
+  margin-top: 70px;
+}
+.primary-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.secondary-header {
+  margin-bottom: 25px;
+}
+input {
+  margin-right: 10px;
+  width: 280px;
+}
+article {
+  margin: 40px 0 60px;
+
+  width: 500px;
+  position: relative;
+  height: 0;
+  padding-bottom: 60%;
+  display: flex;
+  justify-content: center;
+}
+article > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.socialbg {
+  margin-right: 10px;
+}
+footer > p {
+  margin-top: 20px;
+}
+button {
+  height: 32px;
+  width: 110px;
+  border-radius: 20px;
+}
+.social {
+  display: flex;
+}
+/*
+===========================
+STYLING
+===========================
+*/
+.primary-header {
+  font-weight: 300;
+}
+.secondary-header {
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+}
+input,
+button {
+  outline: none;
+}
+
+input {
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid grey;
+  height: 35px;
+  padding-left: 20px;
+}
+.errorShown {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+.error-message {
+  font-size: 10px;
+  color: #d0312d;
+  align-self: flex-start;
+  margin-left: 55px;
+  margin-top: 3px;
+}
+.good {
+  color: hsl(223, 87%, 63%);
+}
+button {
+  font-size: 10px;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+}
+::placeholder {
+  opacity: 0.2;
+}
+button:hover {
+  background: hsl(223, 100%, 88%);
+  cursor: pointer;
+}
+.fa-brands {
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  color: hsl(223, 87%, 63%);
+  font-size: 12px;
+}
+.fa-facebook-f {
+  right: 9px;
+}
+.fa-instagram {
+  right: 7px;
+}
+.socialbg {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: white;
+
+  border-radius: 50%;
+}
+.socialbg:hover {
+  background: hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+.socialbg:hover .fa-brands {
+  color: white;
+}
+footer > p {
+  font-size: 10px;
+  opacity: 0.6;
+}
+@media (max-width: 600px) {
+  article > img {
+    width: 310px;
+    height: auto;
+  }
+  article {
+    width: 320px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    width: 280px;
+    margin-top: 10px;
+  }
+  .main {
+    position: relative;
+  }
+  .error-message {
+    align-self: center;
+    margin: 0;
+    position: absolute;
+  }
+}
